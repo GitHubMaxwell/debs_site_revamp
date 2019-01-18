@@ -1,0 +1,69 @@
+// Color Palette (placholder change)
+$header-color: #f9423a;
+$primary-color: #fff;
+$primary-text-color: #515151;
+$secondary-text-color: #393939;
+$body-text: #979797;
+$secondary-color: black;
+$background-color: #f6f3ea;
+
+// Dynamically Set Color (placholder change)
+@function set-text-color($color) {
+  @if (lightness($color) > 40) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}
+// ============ End of Color Palette
+
+// Font Palette (placholder change)
+$heading-font: Arial, Helvetica, sans-serif;
+$sub-heading-font: Helvetica;
+$body-font: Times;
+// ============ End of Font Palette
+
+// Transition (placholder change)
+// "all" is slow
+// @mixin easeOut {
+//   transition: all 170ms ease-out;
+// }
+// ============ End of Transitions
+
+/* FLEX BOX / prefixes
+
+@mixin flexbox() {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+@mixin flex($values) {
+  -webkit-box-flex: $values;
+  -moz-box-flex:  $values;
+  -webkit-flex:  $values;
+  -ms-flex:  $values;
+  flex:  $values;
+}
+
+@mixin order($val) {
+  -webkit-box-ordinal-group: $val;  
+  -moz-box-ordinal-group: $val;     
+  -ms-flex-order: $val;     
+  -webkit-order: $val;  
+  order: $val;
+}
+
+.wrapper {
+  @include flexbox();
+}
+
+.item {
+  @include flex(1 200px);
+  @include order(2);
+}
+
+
+*/

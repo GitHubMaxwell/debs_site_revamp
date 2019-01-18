@@ -1,0 +1,58 @@
+.home-hero-image,
+.home-arch-image {
+  width: 100%;
+}
+.home-about-container {
+  margin: 1.3rem 5rem 5rem;
+  .home-lg-heading {
+    font-size: 2.5em;
+    margin-bottom: 2rem;
+  }
+  p {
+    color: $body-text;
+    margin-bottom: 1rem;
+    &:last-of-type {
+      margin-bottom: 2rem;
+    }
+  }
+}
+.home-testimonial-container {
+  color: #515151;
+  background: #eeebe6;
+  padding: 3em;
+  h3,
+  p {
+    margin-bottom: 1.5rem;
+  }
+  h3 {
+    text-transform: uppercase;
+  }
+  p {
+    padding: 0 2em;
+    font-size: 1.6em;
+  }
+}
+.home-brokerage-container {
+  p {
+    color: $primary-color;
+  }
+  position: relative;
+  display: flex;
+  z-index: 1;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 0;
+  }
+  .home-brokerage-col {
+    position: absolute;
+    top: 0;
+    left: 0;
+    // width: 50%;
+  }
+}
